@@ -1,0 +1,26 @@
+###
+POST  http://localhost:5183/api/uni
+Content-Type: application/json
+
+{
+    "Name": "Abdullah",
+    "RollNo": "1",
+    "SemesterNo": "one",
+    "GPA": "2.9"
+}
+
+###
+GET http://localhost:5183/api/uni/1
+
+###
+POST  http://localhost:5183/api/uni/1
+Content-Type:  application/json
+
+{
+    "SemesterNo": "three",
+    "GPA": "2.9"
+}
+
+
+###
+DELETE http://localhost:5183/api/uni/1
